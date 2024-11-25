@@ -4,38 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Destination Explorer</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
+<body class="bg-dark text-light">
 
-    <header class="bg-dark text-white p-3">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Travel Destination Explorer</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/destination-list.html">Destinations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/faqs.html">FAQs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/contact-us.html">Contact Us</a></li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Explorer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pages/destination-list.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pages/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pages/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pages/contact-us.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    <header class="text-center py-5 bg-dark-gradient">
+        <h1 class="text-light">Explore the World with Us</h1>
+        <p class="text-light">Discover breathtaking destinations, amazing experiences, and unforgettable memories.</p>
+        <button class="btn btn-light rounded">Get Started</button>
+    </header>
+
+    <main class="container my-5">
+        <section>
+            <h2 class="text-center mb-4 text-light">Featured Destinations</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card rounded shadow bg-secondary text-light">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top rounded" alt="Destination">
+                        <div class="card-body">
+                            <h5 class="card-title">Bali, Indonesia</h5>
+                            <p class="card-text">Experience the magic of tropical beaches, temples, and rice fields.</p>
+                            <button class="btn btn-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card rounded shadow bg-secondary text-light">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top rounded" alt="Destination">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris, France</h5>
+                            <p class="card-text">The city of love awaits with iconic landmarks and rich culture.</p>
+                            <button class="btn btn-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card rounded shadow bg-secondary text-light">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top rounded" alt="Destination">
+                        <div class="card-body">
+                            <h5 class="card-title">Kyoto, Japan</h5>
+                            <p class="card-text">Step back in time and explore beautiful temples and gardens.</p>
+                            <button class="btn btn-primary">View Details</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main class="container py-5">
-        <h1>Welcome to Travel Destination Explorer</h1>
+        </section>
     </main>
-    <footer class="bg-dark text-white text-center p-3">
-        <p>&copy; 2024 Travel Destination Explorer.</p>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4 text-light">What People Are Saying</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="text-center text-light">
+                        <p class="fs-5">"This was the best vacation of my life! Highly recommend."</p>
+                        <small>- Alex</small>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="text-center text-light">
+                        <p class="fs-5">"Such an amazing experience. Can't wait to book again!"</p>
+                        <small>- Maria</small>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="text-center text-light">
+                        <p class="fs-5">"Exploring new places has never been this easy and fun."</p>
+                        <small>- John</small>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Travel Destination Explorer. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>

@@ -1,9 +1,122 @@
+/* General Body and Background */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background: linear-gradient(180deg, #29104A, #150016) !important;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header, footer {
-    background-color: #333;
-    color: #fff;
+/* Navbar Customization */
+.navbar {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+/* Navbar Customization */
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #C81F5D !important;  /* Red Violet color */
+}
+
+
+/* Hero Section */
+header {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(180deg, #29104A, #150016) !important;
+}
+
+header h1, header p {
+    color: white !important;
+}
+
+header button {
+    background-color: #5A2D99 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 12px 24px !important;
+    font-size: 1.2rem !important;
+}
+
+header button:hover {
+    background-color: #C81F5D !important;
+    cursor: pointer !important;
+}
+
+/* Featured Destinations Cards */
+.card {
+    border-radius: 20px !important;
+    background-color: #2C1A38 !important;
+    color: white !important;
+    overflow: hidden !important;
+}
+
+.card .card-img-top {
+    border-radius: 20px !important;
+}
+
+.card-body {
+    padding: 1.5rem !important;
+}
+
+.card .btn {
+    background-color: #5A2D99 !important;
+    color: white !important;
+    border-radius: 50px !important;
+    border: none !important;
+}
+
+.card .btn:hover {
+    background-color: #C81F5D !important;
+}
+
+/* Testimonials Section */
+.carousel-item {
+    padding: 3rem 1rem !important;
+    text-align: center !important;
+}
+
+.carousel-item p {
+    font-size: 1.2rem !important;
+    color: white !important;
+}
+
+.carousel-item small {
+    color: white !important;
+}
+
+/* Footer Customization */
+footer {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 2rem 0 !important;
+}
+
+footer p {
+    margin: 0 !important;
+
+    text-align: center;
+}
+
+/* Rounded Elements for Containers, Buttons, etc. */
+button, .card, .carousel-item, .navbar, .navbar-brand, .nav-link {
+    border-radius: 20px !important;
+}
+
+.card .card-img-top {
+    border-radius: 20px !important;
+}
+
+/* Additional Button Customization */
+button, .btn {
+    border-radius: 50px !important;
 }
