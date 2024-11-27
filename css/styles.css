@@ -88,20 +88,6 @@ header button:hover {
     background-color: #C81F5D !important;
 }
 
-/* Testimonials Section */
-.carousel-item {
-    padding: 3rem 1rem !important;
-    text-align: center !important;
-}
-
-.carousel-item p {
-    font-size: 1.2rem !important;
-    color: white !important;
-}
-
-.carousel-item small {
-    color: white !important;
-}
 
 /* Footer Customization */
 footer {
@@ -170,4 +156,24 @@ button, .btn {
 footer {
     background: #333 !important;
     color: white !important;
+}
+
+
+/* Custom Modal Styles */
+.modal-content {
+    background: linear-gradient(180deg, #29104A, #150016) !important; /* Gradient background */
+    color: white !important; /* Set font color to white */
+}
+
+.modal-header,
+.modal-footer {
+    background: transparent !important; /* Make the header and footer transparent */
+}
+
+.modal-title {
+    color: white; /* Ensure the title text is white */
+}
+
+.modal-body {
+    color: white; /* Ensure the body text is white */
 }

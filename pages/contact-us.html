@@ -54,7 +54,10 @@
                         <label for="message" class="form-label">Message</label>
                         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#successModal">
+                        Send Message
+                      </button>
+
                 </form>
             </div>
 
@@ -67,7 +70,31 @@
         </div>
     </main>
 
-    <footer class="">
+
+    <div class="mt-3 mb-3">
+        <div class="modal" id="successModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+      
+           <div class="modal-header">
+              <h4 class="modal-title">Your Message has been successfully sent.</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <div class="modal-body">
+              <p>We will reply to your message as soon as possible.</p>
+            </div>
+      
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Done</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
