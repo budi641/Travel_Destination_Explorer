@@ -5,28 +5,63 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-
-/* Navbar Customization */
+/* Navbar Styling */
 .navbar {
-    background-color: transparent !important;
-    box-shadow: none !important;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between; /* Aligns brand on one side, links on the other */
+    align-items: center; /* Centers items vertically */
+    padding: 1rem 2rem;
     border-radius: 20px;
 }
 
-.navbar .navbar-brand, 
+/* Navbar Brand */
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex; /* Forces items to align horizontally */
+    align-items: center; /* Vertically centers links */
+    gap: 1.5rem; /* Adds spacing between links */
+}
+
+/* Navigation List */
+.navbar-nav {
+    list-style: none;
+    display: flex; /* Ensures horizontal alignment of list items */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Items */
+.navbar-nav .nav-item {
+    margin: 0;
+}
+
+/* Navigation Links */
 .navbar-nav .nav-link {
-    color: white !important;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Adds clickable area */
     transition: color 0.3s ease;
 }
 
+/* Hover and Active States */
+.navbar-nav .nav-link:hover {
+    color: #C81F5D; /* Red Violet hover color */
+}
+
 .nav-link-active {
-    color: #1c1c84;
+    color: #1c1c84; /* Active link styling */
     font-weight: bold;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #C81F5D !important; /* Red Violet color */
-}
 
 /* Hero Section */
 header {
@@ -91,6 +126,60 @@ header button:hover {
     transform: scale(1.05);
 }
 
+/* Blog Search Section */
+.blog-search {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form {
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease; /* Smooth animation */
+}
+
+.search-input {
+    border: 1px solid #5A2D99; /* Purple border */
+    border-radius: 50px; /* Rounded edges */
+    padding: 0.75rem 1.5rem; /* Inner spacing */
+    font-size: 1rem; /* Standard font size */
+    color: white; /* Text color */
+    background-color: #2C1A38; /* Dark background */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth interaction */
+}
+
+.search-input:focus {
+    outline: none; /* Removes default outline */
+    border-color: #C81F5D; /* Highlight border */
+    box-shadow: 0 0 10px rgba(200, 31, 93, 0.6); /* Glowing effect */
+    transform: scale(1.02); /* Slight scaling */
+}
+
+.btn-search {
+    background-color: #5A2D99; /* Purple button */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 0.75rem 1.5rem; /* Inner spacing */
+    border-radius: 50px; /* Rounded edges */
+    font-size: 1rem; /* Standard font size */
+    cursor: pointer; /* Pointer cursor */
+    margin-left: -4rem; /* Overlaps with input field */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth interaction */
+}
+
+.btn-search:hover {
+    background-color: #C81F5D; /* Hover color */
+    transform: scale(1.05); /* Slight hover scaling */
+}
+
+.btn-search:focus {
+    outline: none; /* Removes default focus outline */
+}
+
+
 /* Testimonials Section */
 .carousel-item {
     padding: 3rem 1rem;
@@ -106,31 +195,53 @@ header button:hover {
 .carousel-item small {
     color: white;
 }
-
-/* Footer Customization */
-footer {
-    background-color: #333 !important;
-    color: white !important;
-    padding: 1rem 0;
+/* Footer Styling */
+.footer {
+    background-color: #333; /* Dark background for footer */
+    color: white; /* White text for contrast */
+    padding: 1.5rem 0; /* Spacing inside the footer */
+    font-size: 0.9rem; /* Slightly smaller font for footer text */
     text-align: center;
 }
 
-footer p {
+/* Footer Left Text */
+.footer p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
+
+/* Footer Right Links */
+.footer-links {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange links horizontally */
+    justify-content: flex-end; /* Align links to the right */
+    gap: 1.5rem; /* Space between links */
+}
+
+.footer-link {
+    color: white; /* White text for links */
+    text-decoration: none; /* No underline for links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.footer-link:hover {
+    color: #C81F5D; /* Red Violet hover color */
+}
+
 
 /* Contact Us Section */
 main h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: center !important;
     color: white;
 }
 
 main h4 {
     font-size: 1.5rem;
-    color: white;
+    color: white ;
     text-align: center; /* Center the h4 */
 }
 
@@ -183,7 +294,7 @@ form .btn:hover {
 .faq-header {
     background: linear-gradient(180deg, #29104A, #150016);
     color: white;
-    text-align: center;
+    text-align: right;
     padding: 2rem;
 }
 

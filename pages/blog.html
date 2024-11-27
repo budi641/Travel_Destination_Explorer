@@ -28,144 +28,109 @@
         </div>
     </nav>
 
+    <!-- Header -->
     <header class="text-center py-5 bg-dark-gradient">
         <h1 class="display-4 text-light">Travel Blog</h1>
         <p class="lead text-light">Join the travelers community and exchange your experiences.</p>
     </header>
-    
 
+    <!-- Blog Search Section -->
+    <section class="blog-search">
+        <form class="search-form d-flex mb-4" action="#" method="GET">
+            <input 
+                class="form-control search-input" 
+                type="search" 
+                placeholder="Search blog posts..." 
+                aria-label="Search" 
+                name="search">
+            <button 
+                class="btn btn-search" 
+                type="submit">
+                Search
+            </button>
+        </form>
+    </section>
 
-        <!-- Main Content -->
-        <main class="container my-5">
-
-
-           <!-- Blog Categories -->
-<section class="blog-categories mt-5">
-    <form class="d-flex mb-4" action="#" method="GET">
-        <input class="form-control me-2" type="search" placeholder="Search blog posts..." aria-label="Search" name="search">
-        <button class="btn btn-outline-primary" type="button">Search</button>
-    </form>
-
-    <div class="row g-3">
-        <div class="col-6 col-md-3">
-            <a href="#" class="btn btn-outline-primary w-100">Travel Tips</a>
-        </div>
-        <div class="col-6 col-md-3">
-            <a href="#" class="btn btn-outline-primary w-100">Adventure</a>
-        </div>
-        <div class="col-6 col-md-3">
-            <a href="#" class="btn btn-outline-primary w-100">Food & Culture</a>
-        </div>
-        <div class="col-6 col-md-3">
-            <a href="#" class="btn btn-outline-primary w-100">Budget Travel</a>
-        </div>
-    </div>
-</section>
-
-
-            <br></br>
-    
-            <!-- Featured Post -->
-            <section class="featured-post mb-5">
-    
-                <div class="card">
-                    <div class="row g-0">
-                        <div class="col-md-6">
-                            <img src="../assets/warsaw.jpg" class="card-img-top" alt="Featured Post">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <span class="badge bg-primary mb-2">Featured</span>
-                                <h2 class="card-title">10 Must-Visit Destinations in 2024</h2>
-                                <p class="card-text">Discover the most exciting destinations that should be on your travel radar for the upcoming year...</p>
-                                <p class="card-text"><small class="text-muted">Posted on January 1, 2024</small></p>
-                                <a href="blog-details.html" class="btn btn-primary">Read More</a>
-                            </div>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Featured Post -->
+        <section class="featured-post mb-5">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="../assets/warsaw.jpg" class="card-img-top" alt="Featured Post">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Featured</span>
+                            <h2 class="card-title">10 Must-Visit Destinations in 2024</h2>
+                            <p class="card-text">Discover the most exciting destinations that should be on your travel radar for the upcoming year...</p>
+                            <p class="card-text"><small class="text-muted">Posted on January 1, 2024</small></p>
+                            <a href="blog-details.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
                 </div>
-            </section>
-    
-            <!-- Blog Posts Grid -->
-            <section class="blog-grid">
-    
-            <div class="grid-container">
-                    <!-- Featured Card -->
-                
-                    <!-- Regular Blog Post Cards -->
-                    
-                    <div class="row">
-                        <!-- Blog Post 1 -->
-                        <div class="col-md-4 mb-4">
-                            <div class="card bg-dark text-light border-0">
-                                <img src="../assets/nadi.jpg" class="card-img-top" alt="Post Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Top 5 Must-Visit Destinations in Europe</h5>
-                                    <p class="card-text">From Paris to Rome, Europe offers incredible diversity in culture and scenery. Here are the top 5 destinations for your next European adventure.</p>
-                                    <a href="#" class="btn btn-primary">Read More</a>
-                                    <!-- Tags -->
-                                    <div class="mt-2">
-                                        <span class="badge bg-primary">Europe</span>
-                                        <span class="badge bg-secondary">Travel Tips</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <!-- Blog Post 2 -->
-                        <div class="col-md-4 mb-4">
-                            <div class="card bg-dark text-light border-0">
-                                <img src="../assets/madrid.jpg" class="card-img-top" alt="Post Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">The Ultimate Guide to Solo Travel</h5>
-                                    <p class="card-text">Solo travel can be one of the most rewarding experiences. Learn how to plan, stay safe, and make the most of your solo adventures!</p>
-                                    <a href="#" class="btn btn-primary">Read More</a>
-                                    <!-- Tags -->
-                                    <div class="mt-2">
-                                        <span class="badge bg-primary">Solo Travel</span>
-                                        <span class="badge bg-secondary">Travel Tips</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <!-- Blog Post 3 -->
-                        <div class="col-md-4 mb-4">
-                            <div class="card bg-dark text-light border-0">
-                                <img src="../assets/cairo.jpg" class="card-img-top" alt="Post Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Adventure Travel in Southeast Asia</h5>
-                                    <p class="card-text">Southeast Asia is an adventure seeker’s paradise. In this post, we highlight the best activities and destinations for thrill-seekers.</p>
-                                    <a href="#" class="btn btn-primary">Read More</a>
-                                    <!-- Tags -->
-                                    <div class="mt-2">
-                                        <span class="badge bg-primary">Adventure</span>
-                                        <span class="badge bg-secondary">Southeast Asia</span>
-                                    </div>
-                                </div>
-                            </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-grid">
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-light border-0">
+                        <img src="../assets/nadi.jpg" class="card-img-top" alt="Post Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Top 5 Must-Visit Destinations in Europe</h5>
+                            <p class="card-text">From Paris to Rome, Europe offers incredible diversity in culture and scenery. Here are the top 5 destinations for your next European adventure.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
-    
-                <!-- Pagination -->
-                <nav class="mt-5">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                        </li>
-                    </ul>
-                </nav>
-            </section>
-    
-            
-        </main>
+                </div>
 
+                <!-- Blog Post 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-light border-0">
+                        <img src="../assets/madrid.jpg" class="card-img-top" alt="Post Image">
+                        <div class="card-body">
+                            <h5 class="card-title">The Ultimate Guide to Solo Travel</h5>
+                            <p class="card-text">Solo travel can be one of the most rewarding experiences. Learn how to plan, stay safe, and make the most of your solo adventures!</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-light border-0">
+                        <img src="../assets/cairo.jpg" class="card-img-top" alt="Post Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Adventure Travel in Southeast Asia</h5>
+                            <p class="card-text">Southeast Asia is an adventure seeker’s paradise. In this post, we highlight the best activities and destinations for thrill-seekers.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -173,9 +138,9 @@
                     <p>&copy; 2024 Explorer. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-end">
-                    <ul class="list-unstyled d-inline-flex gap-3">
-                        <li><a href="faqs.html" class="text-light text-decoration-none">FAQs</a></li>
-                        <li><a href="contact-us.html" class="text-light text-decoration-none">Contact Us</a></li>
+                    <ul class="footer-links">
+                        <li><a href="faqs.html" class="footer-link">FAQs</a></li>
+                        <li><a href="contact-us.html" class="footer-link">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -183,6 +148,5 @@
     </footer>
 
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/scripts.js"></script>
 </body>
 </html>
