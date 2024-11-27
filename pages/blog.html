@@ -38,24 +38,30 @@
         <!-- Main Content -->
         <main class="container">
 
-            <!-- Blog Categories -->
-            <section class="blog-categories mt-5">
-                <h3 class="mb-4">Categories</h3>
-                <div class="row g-3">
-                    <div class="col-6 col-md-3">
-                        <a href="#" class="btn btn-outline-primary w-100">Travel Tips</a>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <a href="#" class="btn btn-outline-primary w-100">Adventure</a>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <a href="#" class="btn btn-outline-primary w-100">Food & Culture</a>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <a href="#" class="btn btn-outline-primary w-100">Budget Travel</a>
-                    </div>
-                </div>
-            </section>
+
+           <!-- Blog Categories -->
+<section class="blog-categories mt-5">
+    <form class="d-flex mb-4" action="#" method="GET">
+        <input class="form-control me-2" type="search" placeholder="Search blog posts..." aria-label="Search" name="search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+    </form>
+
+    <div class="row g-3">
+        <div class="col-6 col-md-3">
+            <a href="#" class="btn btn-outline-primary w-100">Travel Tips</a>
+        </div>
+        <div class="col-6 col-md-3">
+            <a href="#" class="btn btn-outline-primary w-100">Adventure</a>
+        </div>
+        <div class="col-6 col-md-3">
+            <a href="#" class="btn btn-outline-primary w-100">Food & Culture</a>
+        </div>
+        <div class="col-6 col-md-3">
+            <a href="#" class="btn btn-outline-primary w-100">Budget Travel</a>
+        </div>
+    </div>
+</section>
+
 
             <br></br>
     
@@ -88,63 +94,58 @@
                 
                     <!-- Regular Blog Post Cards -->
                     
-                    <div class="card">
-                        <img src="../assets/guad.jpg" class="card-img-top" alt="Blog Post 1">
-                        <div class="card-body">
-                            <span class="badge bg-secondary">Travel Tips</span>
-                            <h5 class="card-title">Backpacking Essentials</h5>
-                            <p class="card-text">Everything you need to know about packing light...</p>
-                            <p class="card-text"><small class="text-muted">January 10, 2024</small></p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                    <div class="row">
+                        <!-- Blog Post 1 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card bg-dark text-light border-0">
+                                <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Post Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Top 5 Must-Visit Destinations in Europe</h5>
+                                    <p class="card-text">From Paris to Rome, Europe offers incredible diversity in culture and scenery. Here are the top 5 destinations for your next European adventure.</p>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                    <!-- Tags -->
+                                    <div class="mt-2">
+                                        <span class="badge bg-primary">Europe</span>
+                                        <span class="badge bg-secondary">Travel Tips</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Blog Post 2 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card bg-dark text-light border-0">
+                                <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Post Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Ultimate Guide to Solo Travel</h5>
+                                    <p class="card-text">Solo travel can be one of the most rewarding experiences. Learn how to plan, stay safe, and make the most of your solo adventures!</p>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                    <!-- Tags -->
+                                    <div class="mt-2">
+                                        <span class="badge bg-primary">Solo Travel</span>
+                                        <span class="badge bg-secondary">Travel Tips</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Blog Post 3 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card bg-dark text-light border-0">
+                                <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Post Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Adventure Travel in Southeast Asia</h5>
+                                    <p class="card-text">Southeast Asia is an adventure seeker’s paradise. In this post, we highlight the best activities and destinations for thrill-seekers.</p>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                    <!-- Tags -->
+                                    <div class="mt-2">
+                                        <span class="badge bg-primary">Adventure</span>
+                                        <span class="badge bg-secondary">Southeast Asia</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <br></br>
-                
-                    <div class="card">
-                        <img src="../assets/sanjuan.jpg" class="card-img-top" alt="Blog Post 2">
-                        <div class="card-body">
-                            <span class="badge bg-success">Adventure</span>
-                            <h5 class="card-title">Mountain Climbing Guide</h5>
-                            <p class="card-text">Essential tips for beginner mountaineers...</p>
-                            <p class="card-text"><small class="text-muted">January 8, 2024</small></p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
-                        </div>
-                    </div>
-                
-                    <div class="card">
-                        <img src="../assets/guad.jpg" class="card-img-top" alt="Blog Post 3">
-                        <div class="card-body">
-                            <span class="badge bg-info">Food & Culture</span>
-                            <h5 class="card-title">European Food Tour</h5>
-                            <p class="card-text">Discovering the best cuisines in Europe...</p>
-                            <p class="card-text"><small class="text-muted">January 5, 2024</small></p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
-                        </div>
-                    </div>
-                    <br></br>
-                    <div class="card">
-                        <img src="../assets/guad.jpg" class="card-img-top" alt="Blog Post 4">
-                        <div class="card-body">
-                            <span class="badge bg-warning">Budget Travel</span>
-                            <h5 class="card-title">Budget Travel Hacks</h5>
-                            <p class="card-text">Smart ways to travel on a budget...</p>
-                            <p class="card-text"><small class="text-muted">January 3, 2024</small></p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
-                        </div>
-                    </div>
-                    <br></br>
-                    <div class="card">
-                        <img src="../assets/guad.jpg" class="card-img-top" alt="Blog Post 5">
-                        <div class="card-body">
-                            <span class="badge bg-danger">Photography</span>
-                            <h5 class="card-title">Travel Photography Tips</h5>
-                            <p class="card-text">Capture your travel memories like a pro...</p>
-                            <p class="card-text"><small class="text-muted">January 1, 2024</small></p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
     
                 <!-- Pagination -->
                 <nav class="mt-5">
