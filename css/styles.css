@@ -7,59 +7,59 @@ body {
 }
 /* Navbar Styling */
 .navbar {
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between; /* Aligns brand on one side, links on the other */
-    align-items: center; /* Centers items vertically */
-    padding: 1rem 2rem;
-    border-radius: 20px;
+    background-color: transparent !important;
+    display: flex !important;
+    justify-content: space-between  !important;/* Aligns brand on one side, links on the other */
+    align-items: center !important; /* Centers items vertically */
+    padding: 1rem 2rem !important;
+    border-radius: 20px !important;
 }
 
 /* Navbar Brand */
 .navbar .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    color: white !important;
+    text-decoration: none !important;
 }
 
 /* Navbar Links */
 .navbar-links {
-    display: flex; /* Forces items to align horizontally */
-    align-items: center; /* Vertically centers links */
-    gap: 1.5rem; /* Adds spacing between links */
+    display: flex !important; /* Forces items to align horizontally */
+    align-items: center !important; /* Vertically centers links */
+    gap: 1.5rem !important;/* Adds spacing between links */
 }
 
 /* Navigation List */
 .navbar-nav {
-    list-style: none;
-    display: flex; /* Ensures horizontal alignment of list items */
-    margin: 0;
-    padding: 0;
+    list-style: none !important;
+    display: flex !important; /* Ensures horizontal alignment of list items */
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 /* Navigation Items */
 .navbar-nav .nav-item {
-    margin: 0;
+    margin: 0 !important;
 }
 
 /* Navigation Links */
 .navbar-nav .nav-link {
-    font-size: 1rem;
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem; /* Adds clickable area */
-    transition: color 0.3s ease;
+    font-size: 1rem !important;
+    color: white !important;
+    text-decoration: none !important;
+    padding: 0.5rem 1rem !important; /* Adds clickable area */
+    transition: color 0.3s ease !important;
 }
 
 /* Hover and Active States */
 .navbar-nav .nav-link:hover {
-    color: #C81F5D; /* Red Violet hover color */
+    color: #C81F5D !important; /* Red Violet hover color */
 }
 
 .nav-link-active {
-    color: #1c1c84; /* Active link styling */
-    font-weight: bold;
+    color: #1c1c84 !important; /* Active link styling */
+    font-weight: bold !important;
 }
 
 
